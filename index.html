@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <!-- Production Composer Script -->
+  
+    <script>(function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://experience.tinypass.com/xbuilder/experience/load?aid=QiNgMM49pu");
+    </script>
+
+    
+    <!-- Cxense script begin -->
+    <script type="text/javascript">
+      var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+      cX.callQueue.push(['setSiteId', '1356003070757436638']);
+      cX.callQueue.push(['sendPageViewEvent']);
+    </script>
+
+    <script type="text/javascript">
+      (function(d,s,e,t){e=d.createElement(s);e.type='text/java'+s;e.async='async';
+      e.src=location.protocol+'//cdn.cxense.com/cx.js';
+      t=d.getElementsByTagName(s)[0];t.parentNode.insertBefore(e,t);})(document,'script');
+    </script>
+
+    <!-- Cxense script end -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./cropped_NnJqndWmsu_1_ry22c8.png">
+    <title>Flipper Lyles Law Libray</title>
+</head>
+
+<body>
+    <h1>Flipper Lyles Law Library</h1>
+
+    <nav class="navbar">
+        <ul> 
+            <li><button id="logoutButton">Log Out</button></li>
+            <li><button id="loginButton">Log In</button></li>
+            <li><a href="environmental/index.html">Environmental Law</a></li>
+            <li><a href="criminal/index.html">Criminal Law</a></li>
+            <li><a href="personalinjury/index.html">Personal Injury Law</a></li>
+            <li><a href="myaccount.html">My Account</a></li>
+            <!-- <li><a href="login.html">Login</a></li> -->
+            <li><a href="subscribe.html">Subscribe</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+
+      <h4>Law Publication of the Week</h4>
+      <h4><a href="cyclone.html"><img src="images/law1.png" height="200" width="200"></a>
+      </h4>
+  
+      <h4>Law Library - Subscriber Only Content <a href="/dorseywhitneylawlibrary/index.html">(Become a subscriber!)</a></h4>
+      <h4>
+          <a href="taxi.html"><img src="images/law2.png" height="200" width="200"></a>
+          <a href="meteor.html"><img src="images/law3.svg" height="200" width="200"></a>
+          <a href="embryon.html"><img src="images/law4.png" height="200" width="200"></a>
+          <a href="futurespa.html"><img src="images/law5.png" height="200" width="200"></a>
+          <!--
+          <a href="taxi.html"><img src="images/Taxi_(pinball).jpeg" height="200" width="200"></a>
+          <a href="meteor.html"><img src="images/meteor.jpeg" height="200" width="200"></a>
+          <a href="embryon.html"><img src="images/embryon_6413.jpg" height="200" width="200"></a>
+          <a href="futurespa.html"><img src="images/futurespa.jpg" height="200" width="200"></a>
+          -->
+      </h4> 
+
+    </main>
+
+  
+    <!-- Scripts -->
+    <!-- Check if a user is logged in and grab a list of all access data
+      This code will execute when a login is successful. It retrieves a list 
+      of all access data, and if access was granted (i.e., the user is logged in), it closes the offer and refreshes the page.
+      tp = window.tp || [];
+      >// Hook execute when login was successful
+      >tp.push(['addHandler', 'loginSuccess', function () {
+      > // Get list of all access data
+      > tp.api.callApi('/access/list', {}, function (data) {
+      > if (typeof data.data != "undefined") {
+      > // Loop through all possible access objects
+      > for (var i in data.data) {
+      > // Was access granted?
+      > if (data.data[i].granted) {
+      > // All good, user just logged in, we can close the offer
+      > tp.offer.close();
+      > // Additionally we can refresh the page
+      > location.reload();
+      > }
+      > }
+      > }
+      > });
+      >}]);
+      -->
+    <!-- Login/logout -->
+    <script>
+      // Ensure the Piano script is loaded
+      tp = window.tp || [];
+      
+      tp.push(["init", function() {
+        // Get the login button by its ID
+        var loginButton = document.getElementById('loginButton');
+        
+        // Add a click event listener to the button
+        loginButton.addEventListener('click', function() {
+            // This will show the Piano ID login screen when the button is clicked
+            tp.pianoId.show();
+        });
+      }]);
+    </script>
+    
+    <script>
+    // Ensure the Piano script is loaded
+    tp = window.tp || [];
+    
+    tp.push(["init", function() {
+        // Get the login button by its ID
+        var logoutButton = document.getElementById('logoutButton');
+    
+        // Add a click event listener to the button
+        logoutButton.addEventListener('click', function() {
+            // This will show the Piano ID login screen when the button is clicked
+            tp.pianoId.logout();
+        });
+        
+        tp.pianoId.onLogout(function() {
+          // Refresh the page when logout is triggered
+          location.reload(); 
+        });
+    }]);
+    </script>
+    
+    <!-- Sandbox Composer Script 
+    <script>(function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://sandbox.tinypass.com/xbuilder/experience/load?aid=NnJqndWmsu");
+    </script>
+    -->
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <!-- Production Composer Script  -->
+  <script>(function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://experience.tinypass.com/xbuilder/experience/load?aid=QiNgMM49pu");
+  </script>
+ 
+  
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./cropped_NnJqndWmsu_1_ry22c8.png">
+    <title>Flipper Lyles Pinball Strategy</title>
+</head>
+
+<body>
+    <h1>Flipper Lyles Strategy Guides</h1>
+
+    <nav class="navbar">
+        <ul> 
+            <li><button id="logoutButton">Log Out</button></li>
+            <li><button id="loginButton">Log In</button></li>
+            <li><a href="environmental/index.html">Environmental Law</a></li>
+            <li><a href="criminal/index.html">Criminal Law</a></li>
+            <li><a href="personalinjury/index.html">Personal Injury Law</a></li>
+            <li><a href="myaccount.html">My Account</a></li>
+            <!-- <li><a href="login.html">Login</a></li> -->
+            <li><a href="subscribe.html">Subscribe</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div id="my-account"></div>
+   
+    <script>
+      // Get the tp object
+      tp = window["tp"] || [];
+      tp.push(["init", function() {
+          tp.myaccount.show({
+          displayMode: "inline",
+          containerSelector: "#my-account",
+          activateTemplateInteraction: true
+        });
+        
+       }]);
+    </script>
+    
+    
+     <!-- Login/logout -->
+    <script>
+      // Ensure the Piano script is loaded
+      tp = window.tp || [];
+      
+      tp.push(["init", function() {
+        // Get the login button by its ID
+        var loginButton = document.getElementById('loginButton');
+        
+        // Add a click event listener to the button
+        loginButton.addEventListener('click', function() {
+            // This will show the Piano ID login screen when the button is clicked
+            tp.pianoId.show();
+        });
+      }]);
+    </script>
+    
+    <script>
+    // Ensure the Piano script is loaded
+    tp = window.tp || [];
+    
+    tp.push(["init", function() {
+        // Get the login button by its ID
+        var logoutButton = document.getElementById('logoutButton');
+    
+        // Add a click event listener to the button
+        logoutButton.addEventListener('click', function() {
+            // This will show the Piano ID login screen when the button is clicked
+            tp.pianoId.logout();
+        });
+        
+        tp.pianoId.onLogout(function() {
+          // Refresh the page when logout is triggered
+          location.reload(); 
+        });
+    }]);
+    </script>
+    
+    <!-- Sandbox Composer Script
+    <script>(function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://sandbox.tinypass.com/xbuilder/experience/load?aid=NnJqndWmsu");
+    </script> -->
+</body>
+</html>
+    
